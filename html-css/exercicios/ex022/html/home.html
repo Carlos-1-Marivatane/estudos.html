@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ParaLink interno</title>
+    <link rel="stylesheet" href="stilo/style.css">
+    
+</head>
+<body >
+    <h1>Do Zero</h1>
+        <div id="btn" onclick="faca()" onmouseenter="entrar()"
+                onmouseout="sair()">
+            Botao!
+        </div>
+
+    <script>
+
+        function faca() {
+            var n = document.getElementById("btn")
+            n.innerText = "Outra cor!"
+            n.style.backgroundColor="#1e990e9a";
+            n.style.color="white";
+        }
+        function entrar(){
+            var n = document.getElementById("btn")
+            n.innerText= "ENTRASTE!"
+            n.style.color="white"
+            n.style.backgroundColor="#c5ebd6"
+        }
+        function sair(){
+            var n = document.getElementById("btn")
+            n.innerText= "SAÍSTE!"
+            n.style.color="white"
+            n.style.backgroundColor="#063d1e"
+        }
+    </script>
+    
+    
+</body>
+</html>

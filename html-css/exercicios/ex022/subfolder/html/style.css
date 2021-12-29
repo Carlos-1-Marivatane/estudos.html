@@ -1,0 +1,69 @@
+:root{
+    --cor1:#7da58cca;
+    --cor2:#3a7a97ca;
+    --cor3:#778b3bc9;
+    --cor4:#385e51;
+    --cor5:#dc553d;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+   /* background-image: url(hk.jpg);*/
+   background-color: #385e51;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+}
+.login-box{
+    position: absolute;
+    width: 280px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);  
+    color: white; 
+}
+.login-box > h1{
+    float: left;
+    font-size: 50px;
+    border-bottom: 4px solid #dc553d;
+    margin-bottom: 50px;
+    padding: 13px ;
+   
+}
+
+.login-box > div{
+    border-bottom:2px solid #dc553d; 
+    margin-bottom: 20px;}
+.textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 2px solid #dc553d;   
+}
+.textbox > input{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 20px;
+    width: 80%;
+    float: left;
+    margin: 0px 10px; 
+}
+.btn{
+    border: 1px solid #dc553d; 
+    background: none;
+    width: 100%;
+    color: white;
+    padding: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 2s;
+    border-radius: 4px;
+}
+.btn:hover{
+    background-color:var(--cor1);
+    font-size: 20px;
+    color: black;
+}

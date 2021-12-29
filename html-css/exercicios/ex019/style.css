@@ -1,0 +1,22 @@
+#principal{
+    background-color: rgb(54, 212, 14);
+    text-align: center;
+    color: white;
+}
+h2{
+    color: rgb(73, 197, 15);
+}
+
+.basico{
+    color: #05ee15;
+}
+.intermediari{
+    color: #cfdd0b;
+}
+.avancado{
+    color: #ff0000;
+}
+.destaque{
+    background-color: #7e80179a;
+    
+}

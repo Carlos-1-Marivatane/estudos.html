@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #c5ebd6;
+    --cor2: #83e1ad;
+    --cor3: #3ddc84;
+    --cor4: #2fa866;
+    --cor5: #1a5c37;
+    --cor6: #063d1e;
+    --cor7: #874fe2a1;
+    --cor8: #1e990e9a;}
+
+body {
+    background-image: linear-gradient(90deg, #60dd98, #00ff73 );
+}
+#btn{
+    margin: auto;
+    padding: 10px;
+    border: 1px solid var(--cor4);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 5px;
+    max-width: 1000px;
+    min-width: 350px;
+    height: 500px;
+}
+#btn:hover{
+    transition: 1s;
+}

@@ -1,0 +1,58 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dimgray;
+    margin: 0px;
+}
+nav{
+    background: #9e9494;
+    padding: 6px;
+    
+}
+nav > a{
+    text-decoration: none;
+    padding: 6px;
+   
+}
+nav:active{
+    color: rgba(0, 255, 21, 0.315);
+}
+a:hover{
+    color: rgba(255, 0, 0, 0.493)
+}
+a:visited{
+    color: chartreuse;
+}
+header{
+    background: white;
+    padding: 10px;
+    margin: 10px;
+}
+main{
+    background: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px 0px;
+}
+article{
+    background: rgba(170, 166, 166, 0.705);
+}
+article > aside{
+    background: rgba(105, 105, 105, 0.726);
+}
+footer{
+    color: white;
+    background: rgba(0, 0, 0, 0.61);
+    text-align: center;
+    margin: 0px;
+    padding: 6px;
+}
+footer > p{
+    margin: 0px;
+}
+div#bola{
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    background-color: white;
+    border-radius: 50%;
+}
