@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralizacao Vertical</title>
+    <style>
+        div#out{
+            height: 96vh;
+            background-color: #892be0;
+            position: relative;
+        }
+        div#inside{
+            height: 200px;
+            width: 300px;
+            background-color: rgb(204, 204, 9);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="out">
+        <div id="inside"></div>
+    </div>
+</body>
+</html>
