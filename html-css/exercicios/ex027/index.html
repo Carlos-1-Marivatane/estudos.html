@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda Tabela</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            
+        }
+        td, th{
+            border: 2px solid black;
+            padding: 10px;
+            
+        }
+        thead{
+            background-color: gray;
+            color: white;
+        }
+        tfoot{
+            background-color: gray;
+            color: white class='num';
+        }
+        .num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Usando Tabelas Grandes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>Populacao</th>
+                <th>Percentagem</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">45 919 049</td>
+                <td class='num'>21.9%</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21169791</td>
+                <td class='num'>10.1%</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class='num'>17278943</td>
+                <td class='num'>7.1%</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class='num'>17264943</td>
+                <td class='num'>8.3%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total de Habitantes</td>
+                <td class='num'><strong> 8000054</strong></td>
+                <td class='num'>100%</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+</html>
