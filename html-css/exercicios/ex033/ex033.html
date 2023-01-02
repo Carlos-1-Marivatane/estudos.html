@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        th, td{
+            border: 1px solid gray;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Favorites Films</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Films</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alion</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <td>Claudia de Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Batman</td>
+            </tr>
+
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Bruno M.</td>
+                <td>Intocaveis</td>
+                <td>Amnesia</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenco</td>
+                <td>Wall-E</td>
+                <td>OldBoy</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Fabiano M.</td>
+                <td>Star Wars</td>
+                <td>Taxi Driver</td>
+                <td>Toy story</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
