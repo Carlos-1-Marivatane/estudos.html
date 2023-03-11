@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+body{
+    
+}
+
+
+#outside{
+    height: 100vh;
+    position: relative;  
+    
+        
+}
+
+#form_box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: auto;
+    padding: 10px;
+    background-color: rgba(69, 196, 44, 0.37);
+}
+
+input{
+    margin: 3px;
+}
+.first{
+    padding: 10px;
+}
+
+.second{
+    padding: 10px;
+   
+}
+
+.third{
+    padding: 10px;
+   
+   
+}
+
+.fourth{
+    padding: 10px;
+}
+
+.fith{
+    padding: 10px;
+}
+
+.sixth{
+    padding: 10px;
+}
+
+p{
+    padding: 5px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça o seu Login</title>
+    <link rel="shortcut icon" href="login.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/javascript.js"></script>
+</head>
+<body>
+
+    <section id="fora">
+        <form action="enviar.js" method="post" autocomplete="off" id="dentro">
+            <h1>Faça o Login</h1>
+            <p id="imagem"><img src="login.ico" id="simbolo" alt="Simbolo do site"></p>
+
+            <p>
+                <label for="nome_usuario">Nome do Usuário:</label>
+                <input type="text" name="nome" id="nome_usuario" minlength="8" maxlength="20">
+            </p>
+
+            <p>
+                <label for="senha_usuario">Senha:</label>
+                <input type="password" name="senha" id="senha_usuario" minlength="8" maxlength="12">
+            </p>
+
+            <p id="hard_p">
+                Ainda não tem uma conta? <a href="#">Criar conta</a>
+            </p>
+
+            <p>
+                <input type="button" value="Entrar" onclick="verificar()" class="botao_entrar">
+            </p>
+
+            <div id="res"></div>
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+/*Paleta de cores*/ 
+
+:root{
+    --verde: #49a09d;
+    --lilas: #5f2c82;
+
+}
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: var(--lilas);
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+   
+}
+
+section.login{
+    background-color: white;
+    width: 260px;
+    height: 500px;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    overflow: hidden;
+    box-shadow: 0px 10px rgba(0, 0, 0, 0.158);
+    transform: translate(-50%, -50%);
+    transition: width .5s, height .5s;
+    transition-timing-function: ease;
+}
+
+
+section.login > div#imagens{
+    background: #5f2c82 url(../imagens/paisagem.jpg);
+    background-size: cover;
+    height: 200px;
+    display: block;
+}
+
+section.login > div#formulario{
+    padding: 10px;
+    display: block;
+}
+
+
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+div#formulario > p{
+    font-size: 0.8em;
+}
+
+.icon{
+    width: 22px;
+    margin-top: 8px;
+    background-color: var(--lilas);
+    color: white;
+    
+     
+}
+
+
+div.login > input{
+    background-color: #0add9e;
+    width: calc(100% - 27px);
+    height: 100%;
+    border: 0px;
+    border-radius: 7px;
+    padding: 4px;
+    transform: translateY(-5px);
+}
+
+
+div.login > input:focus-within{
+    background-color: white;
+    font-weight: 500;
+}
+
+form > input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--verde);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover{
+    background-color: #188363;
+}
+
+form > a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #484949;
+    color: rgb(0, 0, 204);
+    font-weight: 400;
+    text-decoration: none;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+
+
+form > div.login{
+    background-color: #5f2c82;
+    width: 100%;
+    display: block;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+   
+}
+
+
+form label{
+    display: none;
+}

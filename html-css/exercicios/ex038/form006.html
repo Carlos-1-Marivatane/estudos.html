@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de Formularios</h1>
+    <form action="ss.php" method="get">
+        <p><label for="cor">Cor</label>
+            <input type="color" name="cor" id="cor" value="#02dfac">
+        </p>
+        
+        <p>
+            <label for="ran">Nivel de Satisfacao</label>
+            <input type="range" name="nivel" id="ran" min="1" max="50">
+        </p>
+
+        <p>
+            <label for="ficheiro">Foto do Perfil</label>
+            <input type="file" name="F" id="ficheiro">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+        <p>
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

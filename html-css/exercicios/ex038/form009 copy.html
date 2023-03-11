@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OutPut part 2</title>
+</head>
+<body>
+    <h1>FORMULARIO OUTPUT</h1>
+    <form action="ss.php" method="get">
+
+        <p>
+            <label for="ano_de_nascimento">Seu ano de nascimento:</label>
+            <input type="number" name="ano" id="ano_de_nascimento" min="1920" max="2023" oninput="calculo_idade()">
+        </p>
+
+        <p>
+            <label for="resu">Sua idade:</label>
+            <output id="resu">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+    <script>
+        function calculo_idade(){
+            let atual = new Date().getFullYear()
+          
+
+            resu.innerHTML = Number(atual) - Number(ano_de_nascimento.value)
+        }
+    </script>
+</body>
+</html>

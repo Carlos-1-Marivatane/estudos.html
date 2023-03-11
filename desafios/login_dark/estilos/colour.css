@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --ywhite: #ecf2f2; 
+    --yblack: #000000;
+    --yblue: #29333f;
+    --yblue2: #00ccff6b;
+    --ygray: #1b1b1d;
+    --yblue_border: #bed2f3;
+}
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+    background-color: #060c0c;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+}
+section.login{
+    background-color: var(--ygray);
+    width: 270px;
+    height: 480px;
+    border: 1px solid var(--yblue2);
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .7s;
+    transition-timing-function: ease;
+    
+    
+}
+
+section.login > div#imagem{
+    background: var(--yblue) url(../imagens/cap1.jpg);
+    display: block;
+    height: 150px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center top;
+}
+section.login > div.forme{
+    color: var(--ywhite); 
+    background-color: var(--ygray);
+    margin: auto;
+    padding: 10px;
+   
+}
+
+section.login > div.forme > h1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.9em;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 5px;
+}
+
+section.login > div.forme > p{
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: #c7c2c2;
+}
+
+form{
+    padding: 8px 0px;
+}
+
+form > p{
+    padding: 6px 0px;
+}
+
+form > p > input{
+    height: 34px;
+    font-size: 0.9em;
+    width: 100%;
+    border-radius: 10px;
+    color: var(--y);
+    border: 1px solid #383636;
+    background-color: var(--yblue);
+    padding-left: 8px;
+}
+
+form > p > input:focus-within{
+    background-color: var(--yblue2);
+    color: var(--ywhite);
+   
+    
+}
+
+form > p > input:hover{
+    border: 1px solid var(--yblue_border);
+    transition: .7s;
+}
+
+form > input[type=submit]{
+    width: 100%;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    height: 33px;
+    background: #0f6cf7;
+    border: 1px solid #616060;
+    color: white;
+    margin-top: 20px;
+}
+
+form > input[type=submit]:hover{
+    background-color: #1150ad ;
+    transition: 1s;
+}
+
+form > a{
+    text-decoration: none;
+    float: right;
+    color: #1164e2;
+    margin-top: 10px;
+}
+form > a:hover{
+    color: #ad2321;
+    transition-timing-function: ease;
+    transition: .8s;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CHECKBOX AND RADIO</h1>
+    <form action="ss.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="masc" checked><label for="masc">Masculino</label> <br>
+            <input type="radio" name="sexo" id="fem"><label for="fem">Feminino</label> <br>
+            <input type="radio" name="sexo" id="outr"><label for="outr">Outro</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="espor" id="esportes"><label for="esportes">Futebol</label><br>
+            <input type="checkbox" name="espor" id="ten"><label for="ten">Tenis</label> <br>
+            <input type="checkbox" name="espor" id="bas"> <label for="bas">Basquetebol</label> <br>
+            <input type="checkbox" name="espor" id="atl"> <label for="atl">Atletismo </label><br>
+            <input type="checkbox" name="espor" id="cicl"> <label for="cicl">Ciclismo</label> <br>
+            <input type="checkbox" name="espor" id="spr"> <label for="spr">Sprint</label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

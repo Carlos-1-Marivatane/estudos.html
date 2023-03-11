@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="ss.php" method="get">
+        <p>
+            <label for="estate">Provincia</label>
+            <select name="estado" id="estate">
+                <optgroup label="Zona Sul">
+                    <option value="MP">MAPUTO</option>
+                    <option value="GZ">GAZA</option>
+                    <option value="IB">INHAMBANE</option>
+                </optgroup>
+
+
+                <optgroup label="Zona Centro">
+                    <option value="ZB">ZAMBEZIA</option>
+                    <option value="SF">SOFALA</option>
+                    <option value="MC">MANICA</option>
+                    <option value="TT">TETE</option>
+                </optgroup>
+
+                <optgroup label="Zona Norte">
+                    <option value="CD">CABO DELGADO</option>
+                    <option value="NS">NIASSA</option>
+                    <option value="NP">NAMPULA</option>
+                </optgroup>
+            </p>
+        </select>
+
+                <p>
+                    <label for="prof">Profissao:</label>
+                    <input type="text" name="pro" id="prof" list="iprof">
+                    <datalist id="iprof">
+                        <option >Administrador</option>
+                        <option >Director</option>
+                    </datalist>
+                </p>
+                
+
+            <p>
+                <input type="submit" value="ENVIAR">
+                <input type="reset" value="LIMPAR">
+            </p>
+       
+    </form>
+</body>
+</html>

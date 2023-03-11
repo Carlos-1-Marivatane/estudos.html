@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+   
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #23242a;
+  
+
+}
+
+.box{
+    position: relative;
+    width: 380px;
+    height: 420px;
+    background-color: #1c1c1c;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.box::before{
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 420px;
+    top: -50%;
+    transform-origin: bottom right;
+    left: -50%;
+    animation: animate 6s linear infinite;
+    background: linear-gradient(0deg, transparent, transparent, #45f3ff);
+}
+
+.box::after{
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 420px;
+    top: -50%;
+    transform-origin: bottom right;
+    left: -50%;
+    animation: animate 6s linear infinite;
+    background: linear-gradient(0deg, transparent,#45f3ff , #45f3ff);
+    animation-delay: -3s;
+}
+
+@keyframes animate
+{
+    0%
+
+    {
+        transform: rotate(0deg) ;
+    }
+    
+        100%
+    
+        {
+            transform: rotate(360deg) ;
+        
+    }
+}
+
+
+.form{
+    inset: .4px;
+    position: absolute;
+    background-color: #28292d;
+    z-index: 10;
+    border-radius: 8px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form h2{
+    color: #45f3ff;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    text-align: center;
+}
+.input_box{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+
+.input_box input{
+    position: relative;
+    width: 100%;
+    padding: 18px 10px 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: "";
+}
+
+.input_box span{
+    position: absolute;
+    left: 0; 
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    transition: 0.5s;
+}
+
+.input_box input:valid, 
+.input_box input:focus{
+    color: #45f3ff;
+} 

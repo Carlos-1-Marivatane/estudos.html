@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <div id="outside">
+        <div id="form_box">
+            <form action="" method="get" class="formulario">
+                <fieldset class="first">
+                    <legend>Cadastro Geral</legend>
+                    <p>
+                        <fieldset class="second">
+                            <legend>Dados Pessoais</legend>
+                            <p>
+                                <label for="nome">Nome Completo</label>
+                                <input type="text" name="nome" id="nome" required> <br>
+
+                                <label for="prof">Profissão</label>
+                                <select name="prof" id="prof">
+                                    <option>Administrador</option>
+                                    <option>Director</option>
+                                    <option>Advogado</option>
+                                    <option>Médico</option>
+                                    <option>Programador</option>
+                                </select>
+                            </p>
+                        </fieldset>
+
+                        <fieldset class="third">
+                            <legend>
+                                Localização
+                            </legend>
+                            <label for="mail">E-mail:</label>
+                            <input type="email" name="mail" id="mail" required> <br>
+
+                            <label for="rua">Rua</label>
+                            <input type="text" name="rua" id="rua" required>
+                        </fieldset>
+                    </p>
+
+                    <p>    
+                        <fieldset class="fourth">
+                            <legend>Faixa Etária</legend>
+
+                            <input type="radio" name="more_than_0" id="20_anos" checked>
+                            <label for="20_anos">Até 20 anos</label> <br>
+
+                            <input type="radio" name="more_than_0" id="more_than_20"> 
+                            <label for="more_than_20">Mais de 20 Até 30 anos  </label> <br>
+
+                            <input type="radio" name="more_than_0" id="more_than_30"> 
+                            <label for="more_than_30">Mais de 30 Até 40 anos</label> <br>
+
+                            <input type="radio" name="more_than_0" id="more_than_40">
+                            <label for="more_than_40">Mais de 40 Até 50 anos</label> <br>
+
+                            <input type="radio" name="more_than_0" id="more_than_50">
+                            <label for="more_than_50">Mais de 50 Até 60 anos</label> <br>
+
+                            <input type="radio" name="more_than_0" id="more_than_60">
+                            <label for="more_than_60">Mais de 60</label>
+                        </fieldset>
+                    </p>
+
+                    <p>
+                        <fieldset class="fith">
+                            <legend>
+                                Esportes que prática
+                            </legend>
+
+                            <input type="checkbox" name="soccer" id="soccer" checked>
+                            <label for="soccer">Futebol de campo</label> <br>
+
+                            <input type="checkbox" name="soccer" id="salon_soccer">
+                            <label for="salon_soccer">Futebol de Salão</label> <br>
+
+                            <input type="checkbox" name="soccer" id="society_soccer"> 
+                            <label for="society_soccer">Futebol de society</label> <br>
+
+                            <input type="checkbox" name="soccer" id="guard_soccer">
+                            <label for="guard_soccer">Voley de quadra</label>  <br>
+
+                            <input type="checkbox" name="soccer" id="beatch_voley">
+                            <label for="beatch_voley">Volley de praia</label>  <br>
+
+                            <input type="checkbox" name="soccer" id="pool"> 
+                            <label for="pool">Natação de piscina</label> <br>
+
+                            <input type="checkbox" name="soccer" id="open_sea">
+                            <label for="open_sea">Natação de mar aberto</label>
+                        </fieldset>
+                    </p>
+
+                    <p>
+                        <fieldset class = "sixth">
+                            <legend>
+                                Comentário
+                            </legend>
+
+                            <label for="smg">Mensagem</label> <br>
+                            <textarea name="smg" id="smg" cols="30" rows="10"></textarea>
+                        </fieldset>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

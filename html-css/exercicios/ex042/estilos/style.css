@@ -1,0 +1,49 @@
+@charset "UTF-8"; 
+
+*{
+    padding: 0px;
+    margin: 0px;
+    color: rgb(0, 0, 0);
+}
+
+h1, h2{
+    font-weight: 100;
+    font-size: 16px;
+    padding-top: 8px;
+}
+h1{
+    background-color: darkkhaki;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+h2{
+    text-align: center;
+}
+
+.box{
+    
+    position: relative;
+    height: 90vh;
+}
+.form_box{
+    padding-top: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(203, 212, 231, 0.801);
+    width: 600px;
+    height: auto;
+    padding: 10px;
+    
+}
+
+.form_box > p{
+    padding-top: 10px; 
+}
+
+input{
+    margin-left: 20px;
+}

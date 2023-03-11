@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: rgba(5, 4, 4, 0.788);
+    --cor-hover: rgb(4, 4, 175);
+    --cor-primaria: rgba(249, 255, 249, 0.685);
+}
+
+
+.drop ul{
+    list-style-type: none;
+    padding: 0px;
+    background-color: var(--cor1);
+    position: relative;
+    height: 30px;
+   
+}
+
+.drop ul li{
+    display: inline-block;    
+}
+
+.drop ul li a{
+    color: var(--cor-primaria);
+    text-decoration: none;
+    padding: 10px;
+    transition: background .4s;
+}
+
+.drop ul li a:hover{
+    background-color: var(--cor-hover);
+    border-radius: 10px;
+    transition: background .4s;
+    
+}
+
+/*sub menu*/
+
+.drop ul ul{
+    display: none;
+    position: absolute;
+    left: 1;
+
+}
+
+.drop ul li:hover ul{
+    display: block;
+    background-color: rgb(22, 26, 22);
+}
+
+.drop ul ul{
+    width: 100px;
+    height: 150px;
+}
+
+.drop ul ul li a{
+    display: block;
+}

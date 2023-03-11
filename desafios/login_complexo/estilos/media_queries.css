@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /*Para tablet*/
+    body{
+    background-image: linear-gradient(to top, #7122a5, #49a09dbb);
+    }
+    section.login{
+        width: 80vw;
+        height: 400px;
+    }
+
+    section.login > div#imagens{
+        float: left;
+        width: 40%;
+        height: 100%;
+        background-size: cover;
+        background-position: center bottom;
+    }
+
+    section.login > div#formulario{
+        float: right;
+        width: 60%;
+    }
+
+
+    div#formulario > h1{
+        font-size: 2em;
+    }
+
+    div#formulario > p{
+        font-size: 1.1em;
+        text-align: justify;
+        margin: 15px 0px;
+    }
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body{
+        background-image: linear-gradient(to top, #7122a5, #49a09dbb);
+        }
+    section.login{
+        width: 990px;
+        height: 400px;
+    }
+
+    section.login > div#imagens{
+        float: right;
+        width: 46%;
+        height: 100%;
+    }
+
+    section.login > div#formulario{
+        width: 54%;
+        float: left;
+        
+        
+    }
+    div#formulario > h1{
+        font-size: 2em;
+    }
+
+    div#formulario > p{
+        font-size: 1.2em;
+        margin: 20px 0px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    section.login{
+        width: 1000px;
+    }
+
+    section.login > div#imagens{
+        background-image: url(../imagens/tela_grande.jpg);
+        float: left;
+        width: 40%;
+        height: 100%;
+    }
+
+
+    section.login > div#formulario{
+        float: right;
+        width: 60%;
+        height: 100%;
+    }
+
+    
+}
